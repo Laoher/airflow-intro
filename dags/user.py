@@ -10,7 +10,7 @@ def user() -> None:
     print("Fetching user data")
 
 @asset(
-    schedule=user,
+    schedule="@daily",
     tags=['api', 'user'],
     description="Returns user location",
 )
